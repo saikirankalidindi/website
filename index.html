@@ -1,25 +1,22 @@
 
 <!DOCTYPE html>
-<!-- saved from url=(0035)https://dizme.vercel.app/index-dark -->
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Dizme | Home</title>
+    <title>Home</title>
     <meta name="next-head-count" content="5" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="form.css">
+    <script src="magicmouse.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" href="top.css">
     <link
       rel="preload"
       href="./portfolio/77fda05b67fa8952.css"
@@ -34,82 +31,54 @@
     <style
       data-href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
     >
-    /* Style for the pop-up message */
-    body {
-    font-family: 'Varela Round', sans-serif;
-  }
-  .modal-confirm {    
-    color: #636363;
-    width: 325px;
-    font-size: 14px;
-  }
-  .modal-confirm .modal-content {
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-  }
-  .modal-confirm .modal-header {
-    border-bottom: none;   
-    position: relative;
-  }
-  .modal-confirm h4 {
-    text-align: center;
-    font-size: 26px;
-    margin: 30px 0 -15px;
-  }
-  .modal-confirm .form-control, .modal-confirm .btn {
-    min-height: 40px;
-    border-radius: 3px; 
-  }
-  .modal-confirm .close {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-  } 
-  .modal-confirm .modal-footer {
-    border: none;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 13px;
-  } 
-  .modal-confirm .icon-box {
-    color: #fff;    
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: -70px;
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    z-index: 9;
-    background: #82ce34;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  }
-  .modal-confirm .icon-box i {
-    font-size: 58px;
-    position: relative;
-    top: 3px;
-  }
-  .modal-confirm.modal-dialog {
-    margin-top: 80px;
-  }
-  .modal-confirm .btn {
-    color: #fff;
-    border-radius: 4px;
-    background: #82ce34;
-    text-decoration: none;
-    transition: all 0.4s;
-    line-height: normal;
-    border: none;
-  }
-  .modal-confirm .btn:hover, .modal-confirm .btn:focus {
-    background: #6fb32b;
-    outline: none;
-  }
-
+    @font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7myjJAVF.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7mwjJQVF.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7mz9JQVF.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7myjJQVF.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7myRJQVF.woff)
+    format("woff");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v13/92zPtBhPNqw79Ij1E865zBUv7mx9IgVF.woff)
+    format("woff");
+}
     </style>
   </head>
   <body class="dark opened content-hidden" style="background-color: #080827;">
@@ -123,7 +92,7 @@
             <h4 class="modal-title w-100">Awesome!</h4> 
           </div>
           <div class="modal-body">
-            <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+            <p class="text-center">Subscribed!. You will get updates to your mail.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
@@ -154,18 +123,18 @@
             <div class="dropdown_inner">
               <ul class="anchor_nav">
                 <li class="current">
-                  <a id="magicPointer" href="#home">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li class="">
-                  <a class="magic-hover" href="#about">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li class="">
-                  <a class="magic-hover" href="#Portfolio"
+                  <a href="#Portfolio"
                     >Portfolio</a
                   >
                 </li>
                 <li class="">
-                  <a class="magic-hover" href="#service"
+                  <a href="#service"
                     >Service</a
                   >
                 </li>
@@ -248,8 +217,9 @@
                   <div class="name"><h3>Saikiran Kalidindi</h3></div>
                   <div class="job">
                     <p>
-                      A <span class="greenText">Creative Designer</span>
-                      <!-- -->From <span class="purpleText">New York</span>
+                      <span>A</span>
+                      <!-- --><span id="app" class="greenText">Creative Designer</span>
+                      <!-- -->From <span class="purpleText">Hyderabad</span>
                     </p>
                   </div>
                   <div class="text">
@@ -636,7 +606,7 @@
                       <div class="wrapper">
                         <h3>
                           <span class="count-text" data-from="0" data-to="18"
-                            >18</span
+                            >3</span
                           >
                         </h3>
                         <span class="name">Years of<br />Success</span>
@@ -646,7 +616,7 @@
                       <div class="wrapper">
                         <h3>
                           <span class="count-text" data-from="0" data-to="9"
-                            >9</span
+                            >1</span
                           >K
                         </h3>
                         <span class="name">Total<br />Projects</span>
@@ -660,8 +630,8 @@
                     data-wow-duration="1s"
                     style="visibility: visible; animation-duration: 1s"
                   >
-                    <span>I'm a Designer</span>
-                    <h3>I Can Design Anything You Want</h3>
+                    <span>I'm a Designer & Developer</span>
+                    <h3>I Can Design & Develop Anything You Want</h3>
                   </div>
                   <div
                     class="text wow fadeInUp"
@@ -842,11 +812,11 @@
               <div class="portfolio_filter">
                 <ul>
                   <li><a class="c-pointer current">All</a></li>
-                  <li><a class="c-pointer">Youtube</a></li>
-                  <li><a class="c-pointer">Vimeo</a></li>
-                  <li><a class="c-pointer">Soundcloud</a></li>
-                  <li><a class="c-pointer">Popup</a></li>
-                  <li><a class="c-pointer">Detail</a></li>
+                  <li><a class="c-pointer">Machine Learning</a></li>
+                  <li><a class="c-pointer">Deep Learning</a></li>
+                  <li><a class="c-pointer">AI</a></li>
+                  <li><a class="c-pointer">Web Applications</a></li>
+                  <li><a class="c-pointer">Python Applications</a></li>
                 </ul>
               </div>
               <div class="dizme_tm_portfolio_titles"></div>
@@ -1319,7 +1289,7 @@
                           alt="image"
                       /></span>
                       <div class="title">
-                        <h3>Graphic Design</h3>
+                        <h3>App Development</h3>
                         <span class="price">Starts from <span>$199</span></span>
                       </div>
                       <div class="text">
@@ -1395,7 +1365,7 @@
                           alt="image"
                       /></span>
                       <div class="title">
-                        <h3>UI/UX Design</h3>
+                        <h3>AI Based Projects</h3>
                         <span class="price">Starts from <span>$299</span></span>
                       </div>
                       <div class="text">
@@ -1488,15 +1458,15 @@
             </div>
             <div
               class="brush_1 wow fadeInLeft"
-              data-wow-duration="1s"
-              style="visibility: visible; animation-duration: 1s"
+              data-wow-duration="3s"
+              style="visibility: visible; animation-duration: 3s"
             >
               <img src="portfolio/5.png" alt="image" />
             </div>
             <div
               class="brush_2 wow zoomIn"
-              data-wow-duration="1s"
-              style="visibility: visible; animation-duration: 1s"
+              data-wow-duration="3s"
+              style="visibility: visible; animation-duration: 3s"
             >
               <img src="portfolio/6.png" alt="image" />
             </div>
@@ -1568,7 +1538,7 @@
                               class="main"
                               data-img-url="img/testimonials/6.jpg"
                               style="
-                                background-image: url('img/testimonials/6.jpg');
+                                background-image: url('./portfolio/img/testimonials/6.jpg');
                               "
                             ></div>
                           </div>
@@ -1624,7 +1594,7 @@
                               class="main"
                               data-img-url="img/testimonials/4.jpg"
                               style="
-                                background-image: url('img/testimonials/4.jpg');
+                                background-image: url('./portfolio/img/testimonials/4.jpg');
                               "
                             ></div>
                           </div>
@@ -1680,7 +1650,7 @@
                               class="main"
                               data-img-url="img/testimonials/3.jpg"
                               style="
-                                background-image: url('img/testimonials/3.jpg');
+                                background-image: url('./portfolio/img/testimonials/3.jpg');
                               "
                             ></div>
                           </div>
@@ -1736,7 +1706,7 @@
                               class="main"
                               data-img-url="img/testimonials/6.jpg"
                               style="
-                                background-image: url('img/testimonials/6.jpg');
+                                background-image: url('./portfolio/img/testimonials/6.jpg');
                               "
                             ></div>
                           </div>
@@ -1792,7 +1762,7 @@
                               class="main"
                               data-img-url="img/testimonials/4.jpg"
                               style="
-                                background-image: url('img/testimonials/4.jpg');
+                                background-image: url('./portfolio/img/testimonials/4.jpg');
                               "
                             ></div>
                           </div>
@@ -1820,7 +1790,7 @@
                     data-wow-duration="1s"
                     data-img-url="img/testimonials/2.jpg"
                     style="
-                      background-image: url('img/testimonials/2.jpg');
+                      background-image: url('./portfolio/img/testimonials/2.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                     "
@@ -1831,7 +1801,7 @@
                     data-wow-delay="0.2s"
                     data-img-url="img/testimonials/1.jpg"
                     style="
-                      background-image: url('img/testimonials/1.jpg');
+                      background-image: url('./portfolio/img/testimonials/1.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                       animation-delay: 0.2s;
@@ -1843,7 +1813,7 @@
                     data-wow-delay="0.4s"
                     data-img-url="img/testimonials/3.jpg"
                     style="
-                      background-image: url('img/testimonials/3.jpg');
+                      background-image: url('./portfolio/img/testimonials/3.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                       animation-delay: 0.4s;
@@ -1855,7 +1825,7 @@
                     data-wow-delay="0.6s"
                     data-img-url="img/testimonials/4.jpg"
                     style="
-                      background-image: url('img/testimonials/4.jpg');
+                      background-image: url('./portfolio/img/testimonials/4.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                       animation-delay: 0.6s;
@@ -1871,7 +1841,7 @@
                     data-wow-duration="1s"
                     data-img-url="img/testimonials/5.jpg"
                     style="
-                      background-image: url('img/testimonials/5.jpg');
+                      background-image: url('./portfolio/img/testimonials/5.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                     "
@@ -1882,7 +1852,7 @@
                     data-wow-delay="0.2s"
                     data-img-url="img/testimonials/6.jpg"
                     style="
-                      background-image: url('img/testimonials/6.jpg');
+                      background-image: url('./portfolio/img/testimonials/6.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                       animation-delay: 0.2s;
@@ -1894,7 +1864,7 @@
                     data-wow-delay="0.4s"
                     data-img-url="img/testimonials/7.jpg"
                     style="
-                      background-image: url('img/testimonials/7.jpg');
+                      background-image: url('./portfolio/img/testimonials/7.jpg');
                       visibility: visible;
                       animation-duration: 1s;
                       animation-delay: 0.4s;
@@ -2588,6 +2558,8 @@ popupCancel.addEventListener('click', () => {
 
 
 </script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="./main.js"></script>
 <script type="text/javascript">
   options = {
 "cursorOuter": "circle-basic",
